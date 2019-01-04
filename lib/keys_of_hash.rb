@@ -7,7 +7,7 @@ class Hash
    arguments.each do |place|
      self.each do |animal, location|
         if location == place
-          array << k
+          array << place
         end
       end
     end
