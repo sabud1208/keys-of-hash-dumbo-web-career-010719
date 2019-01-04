@@ -4,10 +4,10 @@ require "pry"
 class Hash
   def keys_of(*arguments)
    array= []
-   arguments.each do |x|
-     self.each do |k, v|
-        if v == x
-          array << k
+   arguments.each do |place|
+     self.each do |animal, location|
+        if location == place
+          array << animal
         end
       end
     end
